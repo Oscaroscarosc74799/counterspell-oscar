@@ -115,7 +115,7 @@ const LatestNews: React.FC = () => {
         ))
       ) : (
         <NoNewsMessage>
-          暫無最新消息，快去喝杯咖啡再回來看看吧！
+          暫無最新消息，快去喝杯咖啡吃個披薩再回來看看吧！
         </NoNewsMessage>
       )}
     </LatestNewsContainer>
