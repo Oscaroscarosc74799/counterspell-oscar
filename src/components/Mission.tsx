@@ -55,14 +55,21 @@ const MissionSectionContainer = styled.section`
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
+  flex-direction: column;
 
   /* Responsive styles for small screens */
   @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: center;
     overflow-y: auto;
     padding: 20px;
   }
+`;
+
+// Styled hint text below the title
+const HintText = styled.p`
+  font-size: 0.9rem;
+  color: var(--text-secondary-color);
+  margin-top: 10px;
+  text-align: center;
 `;
 
 // Styled component for individual planets or cards
@@ -99,10 +106,10 @@ const PlanetStyled = styled.div<{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   `}
 
-    /* 媒體查詢以動態調整寬度 */
+  /* 媒體查詢以動態調整寬度 */
   @media (max-width: 600px) {
-  width: ${({ $isCard }) => ($isCard ? '95%' : 'auto')};
-}
+    width: ${({ $isCard }) => ($isCard ? '95%' : 'auto')};
+  }
 `;
 
 // Styled container for planet positioning
@@ -178,7 +185,7 @@ const Mission: FC = () => {
       text: '激發創意與自我挑戰',
       xOffset: 20,
       yOffset: 20,
-      scale: 0.9,
+      scale: 1.2,
       floatOffset: 10,
       animationDuration: '5s',
     },
@@ -196,7 +203,7 @@ const Mission: FC = () => {
       text: '激勵學生踏上遊戲開發之路',
       xOffset: 70,
       yOffset: 10,
-      scale: 1,
+      scale: 1.3,
       floatOffset: 8,
       animationDuration: '6s',
     },
@@ -239,6 +246,7 @@ const Mission: FC = () => {
     <MissionSectionContainer>
       {/* Central Title */}
       <ContainerTitle>活動宗旨</ContainerTitle>
+      <HintText>將滑鼠移動到圓形上以查看更多內容</HintText>
 
       {isSmallScreen ? (
         // Card Layout for small screens
