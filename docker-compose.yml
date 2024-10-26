@@ -1,0 +1,20 @@
+# Docker Compose Configuration
+# Defines services, networks, and volumes for the Counterspell Event Client.
+
+services:
+  event-website:
+    image: node:latest
+    container_name: event_website
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "4173:4173"
+    command: >
+      sh -c "npm install && npm run build && npm start"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true

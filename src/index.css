@@ -1,0 +1,98 @@
+/* index.css */
+
+/*
+  Global Stylesheet
+  Defines global styles for the application, ensuring consistency and responsiveness.
+  Utilizes CSS variables and media queries for adaptive design.
+*/
+
+/* Global Reset and Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  /* Unified color scheme variables */
+  --text-color: #FFFFFF;
+  --background-color: #1A1A1A;
+  --link-color: #FF4500;
+  --link-hover-color: #FF6347;
+  --button-background: #4D4D4D;
+  --button-hover-color: #FF4500;
+  --button-focus-outline: 4px auto #FF4500;
+  --card-bg-color: #e0f7fa;
+}
+
+/* Removed prefers-color-scheme media query */
+
+/* Base Styles */
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: scroll; /* Ensure vertical scrolling */
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color-scheme: var(--color-scheme);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+#root {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-background);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--button-hover-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: var(--button-focus-outline);
+}
+
+/* Font Face */
+@font-face {
+  font-family: 'Audiowide';
+  src: url('./assets/fonts/Audiowide-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

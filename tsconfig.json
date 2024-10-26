@@ -1,0 +1,9 @@
+{
+  // TypeScript Root Configuration
+  // References other TypeScript configuration files for modular setup.
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

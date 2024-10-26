@@ -1,0 +1,161 @@
+// colorSchemes.ts
+
+export interface CustomScheme {
+  name: string;
+  className: string;
+  variables: { [key: string]: string };
+  translation: string;
+}
+
+export const colorSchemes: CustomScheme[] = [
+  {
+    name: '黑綠配色',
+    className: 'color-scheme-black-green',
+    translation: '黑綠配色',
+    variables: {
+      '--text-color': '#ededed',
+      '--background-color': '#292929',
+      '--link-color': '#4fab61',
+      '--link-hover-color': '#FF6347',
+      '--button-background': '#333333',
+      '--button-hover-color': '#FF4500',
+      '--button-focus-outline': '4px auto #FF4500',
+      '--card-bg-color': '#e0f7fa',
+    },
+  },
+  {
+    name: 'Dark Mode',
+    className: 'color-scheme-dark',
+    translation: '暗色模式',
+    variables: {
+      '--text-color': '#FFFFFF',
+      '--background-color': '#000000',
+      '--link-color': '#FF4500',
+      '--link-hover-color': '#FF6347',
+      '--button-background': '#333333',
+      '--button-hover-color': '#FF4500',
+      '--button-focus-outline': '#FF4500',
+      '--card-bg-color': '#e0f7fa',
+    },
+  },
+  {
+    name: 'Light Mode',
+    className: 'color-scheme-light',
+    translation: '淺色模式',
+    variables: {
+      '--text-color': '#000000',
+      '--background-color': '#F0F0F0',
+      '--link-color': '#0000FF',
+      '--link-hover-color': '#0000AA',
+      '--button-background': '#CCCCCC',
+      '--button-hover-color': '#0000FF',
+      '--button-focus-outline': '#0000FF',
+      '--card-bg-color': '#e0f7fa',
+    },
+  },
+  {
+    name: 'Colorful High Contrast Bright',
+    className: 'color-scheme-colorful-high-contrast-bright',
+    translation: '色彩豐富高對比亮色',
+    variables: {
+      '--text-color': '#000000',
+      '--background-color': '#FFFFFF',
+      '--link-color': '#FF0000',
+      '--link-hover-color': '#FF4500',
+      '--button-background': '#FFD700',
+      '--button-hover-color': '#FF0000',
+      '--button-focus-outline': '#FF0000',
+      '--card-bg-color': '#e0f7fa',
+    },
+  },
+  {
+    name: 'Colorful Low Contrast Bright',
+    className: 'color-scheme-colorful-low-contrast-bright',
+    translation: '色彩豐富低對比亮色',
+    variables: {
+      '--text-color': '#555555',
+      '--background-color': '#FFFAFA',
+      '--link-color': '#ADD8E6',
+      '--link-hover-color': '#87CEFA',
+      '--button-background': '#FFDAB9',
+      '--button-hover-color': '#ADD8E6',
+      '--button-focus-outline': '#ADD8E6',
+      '--card-bg-color': '#e0f7fa',
+    },
+  },
+  {
+    name: '春日櫻花',
+    className: 'color-scheme-spring-sakura',
+    translation: '春日櫻花',
+    variables: {
+      '--text-color': '#4a4a4a',
+      '--background-color': '#fff5f5',
+      '--link-color': '#ff758c',
+      '--link-hover-color': '#ff8fa3',
+      '--button-background': '#ffb3c1',
+      '--button-hover-color': '#ff758c',
+      '--button-focus-outline': '4px auto #ff758c',
+      '--card-bg-color': '#fff0f3',
+    },
+  },
+  {
+    name: '復古棕褐',
+    className: 'color-scheme-vintage-brown',
+    translation: '復古棕褐',
+    variables: {
+      '--text-color': '#2c1810',
+      '--background-color': '#f5e6d3',
+      '--link-color': '#8b4513',
+      '--link-hover-color': '#a0522d',
+      '--button-background': '#deb887',
+      '--button-hover-color': '#8b4513',
+      '--button-focus-outline': '4px auto #8b4513',
+      '--card-bg-color': '#faf0e6',
+    },
+  },
+  {
+    name: '科技霓虹',
+    className: 'color-scheme-tech-neon',
+    translation: '科技霓虹',
+    variables: {
+      '--text-color': '#00ff9f',
+      '--background-color': '#0a192f',
+      '--link-color': '#00b7ff',
+      '--link-hover-color': '#33c5ff',
+      '--button-background': '#1a2942',
+      '--button-hover-color': '#00ff9f',
+      '--button-focus-outline': '4px auto #00ff9f',
+      '--card-bg-color': '#0d2137',
+    },
+  },
+  {
+    name: '薰衣草田',
+    className: 'color-scheme-lavender-field',
+    translation: '薰衣草田',
+    variables: {
+      '--text-color': '#2c2441',
+      '--background-color': '#f3e5f5',
+      '--link-color': '#9c27b0',
+      '--link-hover-color': '#ba68c8',
+      '--button-background': '#e1bee7',
+      '--button-hover-color': '#9c27b0',
+      '--button-focus-outline': '4px auto #9c27b0',
+      '--card-bg-color': '#f8f0fa',
+    },
+  },
+  {
+    name: '秋日楓葉',
+    className: 'color-scheme-autumn-maple',
+    translation: '秋日楓葉',
+    variables: {
+      '--text-color': '#3e2723',
+      '--background-color': '#fff3e0',
+      '--link-color': '#d84315',
+      '--link-hover-color': '#f4511e',
+      '--button-background': '#ffccbc',
+      '--button-hover-color': '#d84315',
+      '--button-focus-outline': '4px auto #d84315',
+      '--card-bg-color': '#ffe0b2',
+    },
+  },
+];
